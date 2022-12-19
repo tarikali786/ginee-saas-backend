@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  src_backend:
+
+    # image: consultrajs/ginee-docker:SrcBackendV2
+    build:
+      context: .
+    # command: gunicorn project.wsgi:application --bind 0.0.0.0:7000
+    ports:
+      - 7000:7000
+  nginx:
+    build: ./nginx
+    ports:
+      - 80:80
+    depends_on:
+      - src_backend
+    
+

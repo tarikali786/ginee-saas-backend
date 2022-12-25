@@ -20,7 +20,7 @@
             <li>
                 <a href="{% url ROOT_MENU.current_menu.view_name %}?page={{pager.page|add:1}}&{{ pager.url_params }}">
                     {{ pager.page | add:1 }}
-                </a>
+                </a> 
             </li>
         {% endif %}
         {% if pager.has_next_two %}

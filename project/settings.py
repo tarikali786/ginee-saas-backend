@@ -103,9 +103,9 @@ WSGI_APPLICATION = 'project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME' : 'New-DB',
+        'NAME' : 'ginee-db',
         'CLIENT': {
-        'host': 'mongodb+srv://consultrajs:FmjjmzZLsyU1Kxna@cluster0.4z7cbl0.mongodb.net/test'
+        'host': 'mongodb+srv://tarikali:tarik7444@cluster0.sogjof8.mongodb.net/test'
         
         }
     }
@@ -254,3 +254,6 @@ PERSONA_TECH = {
     'PTL03' : 'linux',
     'PTA04' : 'android'
 }
+
+
+CSRF_COOKIE_SECURE = True
